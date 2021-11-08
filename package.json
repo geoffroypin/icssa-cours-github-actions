@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --require @babel/register",
-    "eslint": "prettier --ext src/index.js",
+    "eslint": "eslint src/index.js",
     "jsdoc": "prettier src/index.js",
-    "prettier": "prettier --write src/index.js"
+    "prettier": "prettier --write src/index.js",
+    "init": "eslint --init",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,7 @@
   },
   "dependencies": {
     "eslint": "^8.1.0",
+    "husky": "^7.0.4",
     "jsdoc": "^3.6.7",
     "prettier": "^2.4.1"
   }
